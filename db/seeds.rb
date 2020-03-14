@@ -97,4 +97,46 @@ Car.create!([{
   price: 92950.00,
   car_type: 'COUPE',
   image: 'https://i.imgur.com/QFYaVNp.png'
+},
+{
+  name: 'UX HYBRID',
+  description: '39-MPG COMBINED ESTIMATE',
+  price: 34350.00,
+  car_type: 'HYBRID',
+  image: 'https://i.imgur.com/oDl2tGI.png'
+},
+{
+  name: 'NX HYBRID',
+  description: '31-MPG COMBINED ESTIMATE',
+  price: 39420.00,
+  car_type: 'HYBRID',
+  image: 'https://i.imgur.com/FRvTdqA.png'
+},
+{
+  name: 'RX HYBRID',
+  description: '30-MPG COMBINED ESTIMATE',
+  price: 46800.00,
+  car_type: 'HYBRID',
+  image: 'https://i.imgur.com/MX1rA2g.png'
+},
+{
+  name: 'ES HYBRID',
+  description: '44-MPG COMBINED ESTIMATE',
+  price: 41810.00,
+  car_type: 'HYBRID',
+  image: 'https://i.imgur.com/OoHKJcm.png'
+},
+{
+  name: 'LS HYBRID',
+  description: '354 TOTAL SYSTEM HP',
+  price: 80010.00,
+  car_type: 'HYBRID',
+  image: 'https://i.imgur.com/lsXzikI.png'
+},
+{
+  name: 'LC HYBRID',
+  description: '354 TOTAL SYSTEM HP',
+  price: 97510.00,
+  car_type: 'HYBRID',
+  image: 'https://i.imgur.com/QFYaVNp.png'
 }])
