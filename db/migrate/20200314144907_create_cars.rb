@@ -3,7 +3,11 @@ class CreateCars < ActiveRecord::Migration[6.0]
     create_table :cars do |t|
       t.string :name
       t.text :description
-      t.decimal :price
+      t.string :signing
+      t.string :month_fee
+      t.string :lease_cash
+      t.string :price
+      t.integer :months
       t.string :car_type
       t.string :image
 
