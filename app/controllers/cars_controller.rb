@@ -8,10 +8,10 @@ class CarsController < ApplicationController
   end
 
   def car
-    cars = Car.where(id: params[:id])
+    car = Car.where(id: params[:id])
 
     render json: {
-      cars: cars
+      car: car
     }
   end
 end
