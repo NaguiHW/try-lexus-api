@@ -96,7 +96,7 @@ Car.create!([{
   description: '471-HP 5.0L V8',
   price: 92950.00,
   car_type: 'COUPE',
-  image: 'https://i.imgur.com/QFYaVNp.png'
+  image: 'https://i.imgur.com/reWOOJo.png'
 },
 {
   name: 'UX HYBRID',
@@ -138,5 +138,5 @@ Car.create!([{
   description: '354 TOTAL SYSTEM HP',
   price: 97510.00,
   car_type: 'HYBRID',
-  image: 'https://i.imgur.com/QFYaVNp.png'
+  image: 'https://i.imgur.com/reWOOJo.png'
 }])
