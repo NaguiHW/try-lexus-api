@@ -7,7 +7,7 @@ class CreateCars < ActiveRecord::Migration[6.0]
       t.string :month_fee
       t.string :lease_cash
       t.string :price
-      t.integer :months
+      t.string :months
       t.string :car_type
       t.string :image
 

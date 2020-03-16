@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_03_14_144907) do
     t.string "month_fee"
     t.string "lease_cash"
     t.string "price"
-    t.integer "months"
+    t.string "months"
     t.string "car_type"
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
