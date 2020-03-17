@@ -12,6 +12,8 @@ class User < ApplicationRecord
   validates :password, presence: true
   validates :password_confirmation, presence: true
 
+  has_many :appointments
+
   private
 
   def downcase_email
