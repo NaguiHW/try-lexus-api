@@ -6,4 +6,12 @@ class CarsController < ApplicationController
       cars: cars
     }
   end
+
+  def car
+    car = Car.where(id: params[:id])
+
+    render json: {
+      car: car
+    }
+  end
 end
