@@ -4,7 +4,8 @@ class AppointmentsController < ApplicationController
       user_id: params['user_id'],
       car_id: params['car_id'],
       date: params['date'],
-      city: params['city']
+      city: params['city'],
+      car_name: params['car_name']
     )
 
     if appointment

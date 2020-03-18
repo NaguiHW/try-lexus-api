@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2020_03_17_150029) do
     t.bigint "car_id", null: false
     t.date "date"
     t.string "city"
+    t.string "car_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["car_id"], name: "index_appointments_on_car_id"
