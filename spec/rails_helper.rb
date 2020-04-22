@@ -5,6 +5,7 @@ ENV['RAILS_ENV'] ||= 'test'
 
 require File.expand_path('../config/environment', __dir__)
 
+Dir[Rails.root.join('spec/support/*.rb')].each { |f| require f }
 # Prevent database truncation if the environment is production
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
@@ -46,6 +47,8 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+
+  config.include RequestSpecHelper, type: :request
 
   config.include FactoryBot::Syntax::Methods
 
