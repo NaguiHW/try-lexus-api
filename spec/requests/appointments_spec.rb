@@ -15,7 +15,7 @@ RSpec.describe 'Appointments API' do
         expect(response).to have_http_status(200)
       end
 
-      it 'returns all car appointments' do
+      it 'returns all user appointments' do
         expect(json['appointments'].size).to eq(20)
       end
     end

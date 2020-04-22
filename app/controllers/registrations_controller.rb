@@ -13,7 +13,7 @@ class RegistrationsController < ApplicationController
       render json: {
         status: :created,
         user: user
-      }
+      }, status: 201
     else
       render json: { status: 500 }
     end
