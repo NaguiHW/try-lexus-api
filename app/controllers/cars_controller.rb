@@ -1,17 +1,30 @@
 class CarsController < ApplicationController
   def show
     cars = Car.where(car_type: params[:id])
+    # json_response(cars)
 
-    render json: {
-      cars: cars
-    }
+    if cars.length > 0
+      render json: {
+        cars: cars
+      }
+    else
+      render json: {
+        error: "Couldn't find the cars with the specific type"
+      }, status: 404
+    end
   end
 
   def car
     car = Car.where(id: params[:id])
-
-    render json: {
-      car: car
-    }
+    
+    if car.length > 0
+      render json: {
+        car: car
+      }
+    else
+      render json: {
+        error: "Couldn't find car"
+      }, status: 404
+    end
   end
 end
