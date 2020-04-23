@@ -7,7 +7,7 @@ RSpec.describe 'Sessions Controller' do
 
   describe 'POST /sessions' do
     context 'when request attributes are valid' do
-      before { post "/sessions", params: valid_attributes }
+      before { post '/sessions', params: valid_attributes }
 
       it 'returns status code 201' do
         expect(response).to have_http_status(201)
@@ -15,7 +15,7 @@ RSpec.describe 'Sessions Controller' do
     end
 
     context 'when request attributes are invalid' do
-      before { post "/sessions", params: invalid_attributes }
+      before { post '/sessions', params: invalid_attributes }
 
       it 'returns status code 401' do
         expect(response).to have_http_status(401)
@@ -25,7 +25,7 @@ RSpec.describe 'Sessions Controller' do
 
   describe 'GET /logged_in' do
     context 'when the user is not logged in' do
-      before { get "/logged_in" }
+      before { get '/logged_in' }
 
       it 'has to be false' do
         expect(json['logged_in']).to be_falsey
@@ -37,8 +37,8 @@ RSpec.describe 'Sessions Controller' do
     end
 
     context 'when request attributes are invalid' do
-      before { post "/sessions", params: valid_attributes }
-      before { get "/logged_in" }
+      before { post '/sessions', params: valid_attributes }
+      before { get '/logged_in' }
 
       it 'has to be true' do
         expect(json['logged_in']).to be_truthy
@@ -52,8 +52,8 @@ RSpec.describe 'Sessions Controller' do
 
   describe 'DELETE /logout' do
     context 'logout the user' do
-      before { post "/sessions", params: valid_attributes }
-      before { delete "/logout" }
+      before { post '/sessions', params: valid_attributes }
+      before { delete '/logout' }
 
       it 'has to return status 200' do
         expect(response).to have_http_status(200)

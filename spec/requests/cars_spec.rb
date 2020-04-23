@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Cars API', type: :request do
-  # initialize test data 
+  # initialize test data
   let!(:cars) { create_list(:car, 10) }
   let(:car_type) { cars.first.car_type }
   let(:car_id) { cars.first.id }

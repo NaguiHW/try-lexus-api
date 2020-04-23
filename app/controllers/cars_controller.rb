@@ -3,7 +3,7 @@ class CarsController < ApplicationController
     cars = Car.where(car_type: params[:id])
     # json_response(cars)
 
-    if cars.length > 0
+    if !cars.empty?
       render json: {
         cars: cars
       }
@@ -16,8 +16,8 @@ class CarsController < ApplicationController
 
   def car
     car = Car.where(id: params[:id])
-    
-    if car.length > 0
+
+    if !car.empty?
       render json: {
         car: car
       }

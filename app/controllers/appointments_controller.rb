@@ -14,7 +14,7 @@ class AppointmentsController < ApplicationController
       }, status: 201
     else
       render json: {
-        error: "Some of the fields are blank."
+        error: 'Some of the fields are blank.'
       }, status: 422
     end
   end
@@ -22,7 +22,7 @@ class AppointmentsController < ApplicationController
   def show
     appointments = Appointment.where(car_id: params[:id])
 
-    if appointments.length > 0
+    if !appointments.empty?
       render json: {
         appointments: appointments
       }
