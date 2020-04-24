@@ -1,12 +1,6 @@
 class AppointmentsController < ApplicationController
   def create
-    appointment = Appointment.create!(
-      user_id: params['user_id'],
-      car_id: params['car_id'],
-      date: params['date'],
-      city: params['city'],
-      car_name: params['car_name']
-    )
+    appointment = Appointment.create!(create_params)
 
     if appointment
       render json: {
@@ -31,5 +25,11 @@ class AppointmentsController < ApplicationController
         error: "Couldn't find the appointments"
       }, status: 404
     end
+  end
+
+  private
+
+  def create_params
+    params.permit(:user_id, :car_id, :date, :city, :car_name)
   end
 end
