@@ -7,8 +7,7 @@ https://try-lexus.web.app/
 
 ## Screenshots
 
-![Home](screenshots/Home.png?raw=true "Home")
-![Sedans](screenshots/Sedans.png?raw=true "Sedans")
+![](https://i.imgur.com/p6tNK68.png)
 
 ## Author
 Kalib Hackin - naguihw@gmail.com
@@ -17,7 +16,7 @@ Kalib Hackin - naguihw@gmail.com
 
 You can clone the project using the following command in your terminal:
 ```
-git clone git@github.com:NaguiHW/try-lexus.git
+git clone git@github.com:NaguiHW/try-lexus-api.git
 ```
 
 ## Getting started
@@ -51,3 +50,16 @@ Ready to run the app in a local server:
 ```
 $ rails server
 ```
+
+## Run Tests
+To run the tests, in your terminal you have to execute the following code:
+```
+bundle exec rspec
+```
+
+## Future Features
+- Add and edit personal information like name and address.
+
+## Built With
+- MySQL
+- Ruby on Rails
