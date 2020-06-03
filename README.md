@@ -2,13 +2,23 @@
 
 This is the backend for the project: Try Lexus Cars.
 
-You can test the app in the following link:
+You can test the app in the following link:<br>
+https://try-lexus.web.app/
 
+## Screenshots
 
+![Home](screenshots/Home.png?raw=true "Home")
+![Sedans](screenshots/Sedans.png?raw=true "Sedans")
 
 ## Author
 Kalib Hackin - naguihw@gmail.com
 
+## Download
+
+You can clone the project using the following command in your terminal:
+```
+git clone git@github.com:NaguiHW/try-lexus.git
+```
 
 ## Getting started
 
