@@ -21,7 +21,7 @@ git clone git@github.com:NaguiHW/try-lexus-api.git
 
 ## Getting started
 
-To get started with the app, clone the repo and then install the needed gems:
+To get started with the app, clone the repo, and then install the needed gems:
 
 ```
 $ bundle i
